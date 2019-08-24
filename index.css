@@ -1,0 +1,497 @@
+/** font link (optional)
+
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+*/
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	/*font-family: 'Lexend Deca', sans-serif;*/
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+}
+
+main {
+	display: block;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+a {
+	background-color: transparent;
+}
+
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+img {
+	border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+textarea {
+	overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+template {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+/*! Genesis v0.0.1 beta | MIT License | by Arthur Prather */
+/* Layouts
+================= */
+.container {
+	max-width: 1200px;
+	padding: 0 1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Grid 
+================= */
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-row {
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.flex-small,
+.flex-large {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.flex-small,
+.flex-large {
+	flex-basis: 100%;
+	margin-bottom: 1rem;
+}
+
+/* Small screen breakpoint */
+@media (min-width: 600px) {
+	.flex-small {
+		flex: 1 1 0;
+		margin-bottom: 0;
+	}
+}
+
+/* Large screen breakpoint */
+@media (min-width: 1000px) {
+	.flex-large {
+		flex: 1 1 0;
+		margin-bottom: 0;
+	}
+}
+
+/* Buttons
+  =============== */
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+button,
+[type=submit],
+[type=reset],
+[type=button] {
+	-webkit-appearance: none;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #ccc;
+	color: #333;
+	font-weight: 300;
+	font-size: 1rem;
+	text-transform: none;
+	padding: .55rem 1.25rem;
+	margin: .1rem;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 1;
+}
+
+button:hover,
+button:focus,
+button:active {
+	background-color: #ddd;
+	color: #333;
+	border: 1px solid #ddd;
+}
+
+.muted {
+	background: transparent;
+	color: #4e4e4e;
+	border: 1px solid #818181;
+}
+/** Muted */
+.muted:hover,
+.muted:focus,
+.muted:active {
+	background: transparent;
+	color: #4e4e4e;
+	border: 1px solid #818181;
+}
+
+/** Info */
+.info {
+	background-color: #33b5e5;
+	color: #fff;
+	border: 1px solid #33b5e5;
+}
+
+.info:hover,
+.info:focus,
+.info:active {
+	background-color: #0099cc;
+	color: #fff;
+	border: 1px solid #0099cc;
+}
+
+/** Success */
+.success {
+	background-color: #00c751;
+	color: #fff;
+	border: 1px solid #00c751;
+}
+
+.success:hover,
+.success:focus,
+.success:active {
+	background-color: #007e33;
+	color: #fff;
+	border: 1px solid #007e33;
+}
+
+/** Warning */
+.warning {
+	background-color: #ffbb33;
+	color: #fff;
+	border: 1px solid #ffbb33;
+}
+
+.warning:hover,
+.warning:focus,
+.warning:active {
+	background-color: #ff8800;
+	color: #fff;
+	border: 1px solid #ff8800;
+}
+
+/** Danger */
+.danger {
+	background-color: #ff3547;
+	color: #fff;
+	border: 1px solid #ff3547;
+}
+
+.danger:hover,
+.danger:focus,
+.danger:active {
+	background-color: #cc0000;
+	color: #fff;
+	border: 1px solid #cc0000;
+}
+
+/* Forms
+  =============== */
+[type=color],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=url],
+[type=week],
+[type=time],
+select,
+textarea {
+	display: block;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	padding: .75rem;
+	outline: none;
+	background: transparent;
+	margin-bottom: .5rem;
+	font-size: 1rem;
+	width: 100%;
+	max-width: 100%;
+	line-height: 1;
+}
+
+[type=color]:hover,
+[type=date]:hover,
+[type=datetime]:hover,
+[type=datetime-local]:hover,
+[type=email]:hover,
+[type=month]:hover,
+[type=number]:hover,
+[type=password]:hover,
+[type=search]:hover,
+[type=tel]:hover,
+[type=text]:hover,
+[type=url]:hover,
+[type=week]:hover,
+[type=time]:hover,
+select:hover,
+textarea:hover {
+	border: 1px solid #b4b4b4;
+}
+
+[type=color]:focus,
+[type=color]:active,
+[type=date]:focus,
+[type=date]:active,
+[type=datetime]:focus,
+[type=datetime]:active,
+[type=datetime-local]:focus,
+[type=datetime-local]:active,
+[type=email]:focus,
+[type=email]:active,
+[type=month]:focus,
+[type=month]:active,
+[type=number]:focus,
+[type=number]:active,
+[type=password]:focus,
+[type=password]:active,
+[type=search]:focus,
+[type=search]:active,
+[type=tel]:focus,
+[type=tel]:active,
+[type=text]:focus,
+[type=text]:active,
+[type=url]:focus,
+[type=url]:active,
+[type=week]:focus,
+[type=week]:active,
+[type=time]:focus,
+[type=time]:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+	border: 2px solid #3f729b;
+	/* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #8cbcfe; */
+}
+
+textarea {
+	overflow: auto;
+	height: auto;
+}
+
+fieldset {
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	padding: 1rem;
+	margin: 1.5rem 0;
+}
+
+legend {
+	padding: 0 .5rem;
+	font-weight: 600;
+}
+
+/* Tables
+  =============== */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+thead th {
+	background-color: #f1f1f1;
+	border-bottom: 2px solid #dedede;
+}
+
+tfoot th {
+	border-top: 2px solid #dedede;
+}
+
+td {
+	border-bottom: 1px solid #dedede;
+}
+
+th,
+td {
+	text-align: left;
+	padding: .5rem;
+}
+
+caption {
+	padding: 1rem 0;
+	caption-side: bottom;
+	color: #ababab;
+}
+
+.striped-table tbody tr:nth-child(odd) {
+	background-color: #f8f8f8;
+}
+
+.contain-table {
+	overflow-x: auto;
+}
+
+@media (min-width: 600px) {
+	.contain-table {
+		width: 100%;
+	}
+}
